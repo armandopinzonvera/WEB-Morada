@@ -12,8 +12,8 @@
 }	
 
 #contenedor{
-	width: 100%;
-	height: 1200px;
+	width: 1400px;
+	height: 1000px;
 	/*background: #f0ebd3;*/
 	background: rgb(30,87,153); /* Old browsers */
 	background: -moz-linear-gradient(left,  rgba(30,87,153,1) 0%, rgba(41,137,216,1) 32%, rgba(32,124,202,1) 98%); /* FF3.6-15 */
@@ -76,7 +76,6 @@ la combinacion de "position: sticky" y "top=0"
 	margin-left:0.1em;
 
 }
-
 #menu li{
 	display: inline;
 	background: rgb(198, 169, 204);
@@ -87,7 +86,6 @@ la combinacion de "position: sticky" y "top=0"
 	float: right;
 	
 }
-
 #menu li a{
 
 	text-decoration: none;
@@ -101,8 +99,7 @@ la combinacion de "position: sticky" y "top=0"
 	float: right;
 	
 }
-
- #menu li a:hover {
+#menu li a:hover {
 
 	background:rgb(171, 79, 187); 
 	color: rgb(217, 220, 223);
@@ -110,7 +107,6 @@ la combinacion de "position: sticky" y "top=0"
 	text-shadow: 2px 2px 2px rgba(47, 47, 47, 0.4);
 	box-shadow: 3px 3px 3px rgba(47, 47, 47, 0.4);
 }
-
 #dibujo {
 	height: 400px;
 	position: absolute;
@@ -123,8 +119,6 @@ la combinacion de "position: sticky" y "top=0"
 	background-attachment: fixed;
 	
 }
-/*.Illustracion p*/
-
 #uno{
 	margin-left: 190px;
 	margin-top: 100px;
@@ -147,7 +141,6 @@ la combinacion de "position: sticky" y "top=0"
 	
 	
 }
-
 .Illustracion {
 	height: 550px;
 	background-attachment: fixed;
@@ -162,8 +155,9 @@ la combinacion de "position: sticky" y "top=0"
 /*>>>>>>>> CONTENIDO <<<<<<<<<<*/
 
 #contenido{
-	height: 70%;
-	margin: 1px;
+	height: 75%;
+	width: 90%;
+	margin: 50px;
 	display: inline-block;
 	background: rgb(30,87,153); /* Old browsers */
 	background: -moz-linear-gradient(left,  rgba(30,87,153,1) 0%, rgba(41,137,216,1) 32%, rgba(32,124,202,1) 98%); /* FF3.6-15 */
@@ -180,7 +174,7 @@ la combinacion de "position: sticky" y "top=0"
 }
 /*>>>>>>>>>> SECTION  <<<<<<<<<<<<<*/
 #section{
-	height:100%;
+	height:100px;
 	width:85%;
 	/*background: green;*/
 	margin: 0 auto;
@@ -188,35 +182,103 @@ la combinacion de "position: sticky" y "top=0"
 	
 }
 
-
 #articulo1{
 	width: 100%;
-	height:80%;
-/*	background: #FBEFF8;*/
-	
+	height:350px;
+	display: flex;
+	justify-content: space-between;
+	background: #FBEFF8;
 }
 
+#articulo2{
+	width: 100%;
+	height:150px;
+	display: flex;
+	justify-content: space-between;
+	background: yellowgreen;
+
+}
 .catalogo{
-	width: 32.3%;
+	width: 340px;
+	height: 350px;
+	/*float: left;*/
+	background: rgb(12, 15, 202);
+	border-radius: 8px;
+	box-shadow: 5px 5px 6px rgba(47, 47, 47, 0.4);
+	/*margin: 1px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;*/
+	position: relative;
+	overflow: hidden;
+}
+.catalogo:hover .catal_text{
+
+	transform: translateY(0%);
+
+}
+
+.catalogo:hover .fotosust{
+
+	transform: scale(1.15)
+}
+
+.cataInfo{
+	width: 340px;
 	height: 100%;
 	float: left;
-	/*background: #FBEFF8;*/
+	background: red;
 	margin: 1px;
 	padding-left: 10px;
 	padding-right: 10px;
 	padding-top: 3px;
 	
+	/*position: relative;*/
 }
+
+.cataInfo p{
+	font-size: 16px; 
+	text-align: justify;
+	font-family: Roboto;
+	color: #FBEFF8;
+	background: rgb(128, 0, 128);
+	padding-top: 3px;
+	margin: 1px;
+}
+
 img.fotosust{
-	width: 340px;
+	width: 100%;
 	height: 350px;
 	float: right;
-	margin-top: 2px;
+	transition: all 0.5s;
+	/*margin-top: 2px;
 	margin-right: 5px;
 	border-radius: 8px;
-	box-shadow: 5px 5px 6px rgba(47, 47, 47, 0.4);
+	box-shadow: 5px 5px 6px rgba(47, 47, 47, 0.4);*/
+	
 	/*border: 1px solid rgb(58, 58, 58);*/
 }
+.catal_text{
+
+	position: absolute;
+	bottom: 0;
+	transform: translateY(100%);
+	transition: all 0.5s ease-out;
+}
+
+.catal_text p{
+	font-size: 16px; 
+	text-align: justify;
+	font-family: Roboto;
+	color: rgb(250, 250, 250);
+	background: rgba(0, 0, 0, 0.6);
+	border-radius: 8px;
+	/*background: green;*/
+	padding: 3px;
+	
+}
+
+
 h2{
 	font-size: 22px;
 	text-align: center;
@@ -225,13 +287,8 @@ h2{
 	
 }
 
-p{
-	font-size: 16px; 
-	text-align: justify;
-	font-family: Roboto;
-	color: #FBEFF8;
-}
-#articulo2{
+
+#articulo3{
 	width: 100%;
 	height:20%;
 	background: #F2F5A9;
